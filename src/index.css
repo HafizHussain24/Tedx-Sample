@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #000000;          /* pure pitch black */
+    --color-fg: #FFFFFF;
+    --color-accent: #E62B1E;
+    --color-charcoal: #2B2B2B;
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Inter', system-ui, sans-serif;
+  }
+  
+  body, html {
+    background: #000000 !important;
+    @apply text-fg font-sans antialiased overflow-x-hidden m-0 p-0;
+  }
+
+}
+
+@layer utilities {
+  .text-shadow-accent {
+    text-shadow: 0 0 20px rgba(230, 43, 30, 0.4);
+  }
+  
+  .glow-accent {
+    box-shadow: 0 0 40px rgba(230, 43, 30, 0.3);
+  }
+}
