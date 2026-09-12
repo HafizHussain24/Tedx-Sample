@@ -1,4 +1,4 @@
-import { SVGProps } from 'react';
+import type { SVGProps } from 'react';
 
 // Common styling for all silhouettes
 const commonStyle: SVGProps<SVGSVGElement> = {

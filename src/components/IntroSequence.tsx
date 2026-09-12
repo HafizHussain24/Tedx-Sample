@@ -131,7 +131,7 @@ export function IntroSequence({ onSkip, onComplete }: IntroSequenceProps) {
     if (!ready || phase !== 'scroll') return;
 
     const layout = layoutRef.current!;
-    const VW = window.innerWidth;
+
 
     // Cache total path length once path is rendered
     let totalPathLength = 0;
@@ -212,7 +212,7 @@ export function IntroSequence({ onSkip, onComplete }: IntroSequenceProps) {
   if (!ready) return <div className="fixed inset-0 z-[100]" style={{ background: '#000' }} />;
 
   const layout = layoutRef.current!;
-  const VW = typeof window !== 'undefined' ? window.innerWidth  : 1440;
+
   const VH = typeof window !== 'undefined' ? window.innerHeight : 900;
 
   return (
